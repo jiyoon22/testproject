@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+	<insert id="join" parameterType="userdto">
+		insert into f_user (user_logintype,userid,userpw,username,useryear,usermonth,userday,usergender,zipcode,addr,addrdetail,str_email01,str_email02,userphone,vertificationcode)
+		values(#{user_logintype},#{userid},#{userpw},#{username},#{useryear},#{usermonth},#{userday},#{usergender},#{zipcode},#{addr},#{addrdetail},#{str_email01},#{str_email02},#{userphone},#{vertificationcode})
+	</insert>
+	<select id="checkId" parameterType="string" resultType="_int">
+		select count(*) from f_user where userid = #{userid}
+	</select>
+	<select id="login" parameterType="hashmap" resultType="_int">
+		select count(*) from f_user where userid = #{userid} and binary(userpw) = #{userpw}
+	</select>
+	<select id="checkpw" parameterType="hashmap" resultType="_int">
+		select count(*) from f_user where userid = #{userid} and binary(userpw) = #{userpw}
+	</select>
+	<select id="getUserlist" parameterType="string" resultType="userdto">
+		select * from f_user where binary(userid) = #{userid}
+	</select>
+	<update id="updateUser" parameterType="userdto">
+		update f_user set username=#{username},zipcode=#{zipcode},
+		addr=#{addr}, addrdetail=#{addrdetail} where userid=#{userid}
+	</update>
+	<select id="getUserid" parameterType="hashmap" resultType="userdto">
+		select * from f_user where (username) = #{username} and (userphone) = #{userphone}
+	
+	</select>
+	<update id="pwmodify" parameterType="hashmap">
+		update f_user set userpw=#{userpw} where userid=#{userid}
+	</update>
+	<select id="userpwselect" parameterType="String" resultType="string">
+		select userpw from f_user where userid=#{userid}
+	</select>
+	<delete id="deleteuser" parameterType="String">
+		delete from f_user where userid=#{userid}
+	</delete>
+	
+</mapper>

@@ -1,0 +1,715 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.nmap {
+	color: black;
+}
+.viewinfo {
+    width: 1085px;
+    height: 40px;
+    border-bottom: solid black 1.5px;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 55px;
+    float: left;
+    display: flex;    
+    align-items: center;
+}
+.areabox {
+    width: 1140px;
+    height: 180px;
+    padding-top: 150px;
+}
+.area {
+    font-size: 20px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    margin-left: 130px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.active {
+    font-size: 20px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    margin-left: 130px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: solid rgb(0,0,0) 2px;
+}
+.area:hover:not(.active) {
+    border-bottom: solid rgb(128, 128, 128) 2px;
+}
+.newcafebox {
+    width: 1140px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    float: right;
+}
+.newcafebutton {
+    width: 150px;
+    height: 40px;
+    float: right;
+    border-radius: 6px;
+    font-size: 15px;
+    color: white;
+    border: white;
+    justify-content: center;
+    display: flex;    
+    align-items: center;
+    background-color: #233156;
+    margin-top:20px;
+}
+.cafebox1 {
+    width: 380px;
+    height: 420px;
+    float: left;
+    margin-top: 20px;
+}
+.cafebox2 {
+    width: 380px;
+    height: 420px;
+    padding-top: 120px;
+    float: left;
+}
+.picturebox {
+    width: 300px;
+    height: 310px;
+    margin-left: 40px;
+    background-color: #999999;
+    float: left;
+}
+.namebox {
+    width: 200px;
+    height: 40px;
+    margin-left: 85px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), linear-gradient(to right, rgb(162, 162, 162), #000000, #999999);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    float: left;
+    justify-content: center;
+    display: flex;    
+    align-items: center;
+    font-weight: bolder;
+}
+.mapbox {
+    width: 200px;
+    height: 40px;
+    margin-left: 90px;
+    margin-right: 50px;
+    background-color: #e5d202d2;
+    border-radius: 4px;
+    float: left;
+    justify-content: center;
+    display: flex;    
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+.pagebox {
+    width: 1140px;
+    height: 130px;
+    margin-top: 100px;
+    float: left;
+    background-color: floralwhite;
+}
+body{
+    height: 1994px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+header{
+    height: 175px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+main{
+    height: 1645px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+footer{
+    height: 250px;
+    background-color: #233156;
+}
+.head{
+    width: 1140px;
+    height: 123px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 123px;
+    width: 1140;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.menu{
+    height: 52px;
+    margin: 0 auto;
+    background-color: #233156; 
+}
+.trending_topics{
+    width: 380px;
+    height: 123px;
+    background-color: #fff;
+}
+.fishlogo{
+    width:380px;
+    height:123px;
+    background-color: #fff;
+    text-align: center;
+}
+.login{
+    width: 380px;
+    height: 123px;
+    background-color: #fff;
+}
+.fishlogo > a > img{
+    width:127.75px ;
+    height: 114.77px;
+}
+
+.search{
+    width: 380px;
+    height: 74px;
+    background-color: #b8bca2;
+    display: flex;
+}
+.searchbar{
+    width: 250px;
+    height: 74px;
+    background-color: aqua;
+}
+.mypage{
+    width: 130px;
+    height: 74px;
+    /* background-color:aquamarine; */
+    background-color: #fff;
+    
+}
+.menubar{
+    width: 1140px;
+    height: 52px;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+.menu1 , .menu2{
+    width: 570px;
+    height: 52px;
+}
+ul{
+    list-style: none;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 17px;
+}
+.menu1 > ul > li{
+    float: left;
+    margin-left: 50px;
+}
+.menu2 > ul > li{
+    text-align: right;   
+}
+.menu1 >ul > li > a{
+    color: #fff;
+}
+.menu2 > ul > li > a{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.mypage > div > a > svg { 
+    width: 30px;
+    height: 30px;
+}
+.mypage > div {
+    margin-top: 30px;
+    text-align: right;
+}
+.mypage > div > .person > svg {
+    width: 33px;
+    height: 33px;
+}
+.menu2 > ul {
+    width: 445px;
+}
+
+
+
+
+
+
+.main{
+    width: 1140px;
+    height: 1645.01px ;
+    /* background-color:bisque; */
+    margin: 0 auto;
+    justify-content: center;
+}
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    user-select: none;
+}
+.slide_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 431px;
+    flex-shrink: 0;
+    transition: left 0.15s;
+}
+.slide_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.slide_prev_button {
+    left: 10px;
+}
+.slide_next_button {
+    right: 10px;
+}
+.slide_item.item1 {
+    background-color: darkgoldenrod;
+}
+.slide_item.item2 {
+    background-color: aqua;
+}
+ul,li {
+    list-style: none;
+  
+}
+.slide_pagination {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_pagination > li {
+    color: #7fb5ff88;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+.slide_pagination > li.active {
+    color: #7fb5ff;
+}
+.slide_item_duplicate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    transition: left 0.15s;
+}
+/* .mainphoto > img{
+    margin-top: 10px;
+    width: 1042px;
+    height: 431px;
+    border: solid black;
+} */
+/* .mainphoto{
+   text-align: center;
+} */
+.banner{
+    width: 1042px;
+    height: 192px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+.banner1 > a > img{
+    width: 373px;
+    height: 141px;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.banner1 {
+    width: 521px;
+    height: 192px;
+    text-align: center;
+    padding-top: 20px;
+}
+.item{
+    width: 1042px;
+    height: 330px;
+    background-color:#fff;
+    margin: 0 auto;
+}
+.itemcontainer{
+    width: 996px;
+    height: 298px;
+    margin: 0 auto;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.itemcontainer1{
+    width: 946.86px;
+    height: 227.1px;
+    background-color: #fff;
+    margin: 20px auto;
+    display: flex;
+}
+.hotitem{
+    width: 176.6px;
+    height: 227.1px;
+    background-color: #233156;
+    border: solid 1px #233156;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+}
+.itemcontainer > .itemcontainer1 > .hotitem >  img{
+    width: 156.49px;
+    height: 151.46px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 6px;
+
+}
+.itemcontainer > .itemcontainer1 > .hotitem > div{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'KOTRA_GOTHIC';
+    
+}
+strong {
+    font-size: 20px;
+    font-family: 'KOTRA_GOTHIC';
+}
+.newhot{
+    width: 1042px;
+    height: 550px;
+    margin: 44px auto;
+    /* background-color: #b8bca2; */
+    display: flex;
+}
+.newestcontainer ,.hotclubcontainer{
+    width: 521px;
+    height: 550px;
+}
+.newest ,.hotclub {
+    width: 487.52px;
+    height: 505.74px;
+    border: solid 1px black;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.hotclub > .hotclubs{
+    width: 365.89px;
+    height: 383.08px;
+    border: solid 2px black;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 65px;
+    text-align: center;
+    
+}
+.hotclub > div > img{
+    width: 332.43px;
+    height: 282.37px;
+    border: solid 2px black;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.hotclub > div > ul > li {
+    margin: 0 auto;
+    margin-right: 40.01px;
+}
+
+
+
+
+
+
+footer > div {
+    width:1042px ;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+}
+.footer > p{
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'KOTRA_GOTHIC';
+}
+.footer{
+    width: 570px;
+    display: inline-block;
+    margin-top: 70px;
+}
+.sns > svg {
+    width: 40px;
+    margin-right: 10px;
+    height: 30px;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+
+
+
+.login{
+    width: 380px;
+    height: 123px;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+.fishlogo > a > img{
+    width:127.75px ;
+    height: 114.77px;
+}
+.loginbutton{
+    width: 160px;
+    height: 20px;
+    margin-left: 1240px;
+    padding-top: 40px;
+    font-size: 17px;
+}
+.searchbar{
+    width: 500px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 550px;
+    padding-left: 10px;
+    border: 3px solid #233156; 
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+.head{
+    width: 1140px;
+    height: 123px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #233156;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+.menu{
+    height: 52px;
+    margin: 0 auto;
+    background-color: #233156; 
+}
+header{
+    height: 100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.closezone_sub {
+    width: 40px;
+    height: 40px;
+    margin-left: 1100px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+}
+.closezone {
+    width: 40px;
+    height: 40px;
+    margin-left: 1100px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+
+}
+.searchzone_sub {
+    width: 40px;
+    height: 40px;
+    margin-left: 1080px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+}
+.searchzone {
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: visible;
+}
+.searchplace {
+    width: 1100px;
+    height: 100px;
+    margin-left: -20px;
+    float: left;
+    visibility: hidden;
+}
+.moretext {
+    margin-left: 10px;
+}
+.logintext {
+    margin-left: -40px;
+    margin-right: 20px;
+}
+.jointext {
+    margin-left: 20px;
+}
+.logintext, .jointext, .moretext { 
+    font-weight: 550;
+    color: #ffffff;
+}
+.sublist {
+    margin-left: 500px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    width: 140px;
+    right: 21.7%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #233156;
+ }
+ 
+ #over:hover .sublist {
+    display: block;
+ }
+ 
+ #more_sub {
+    padding: 8px 0 0 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'KOTRA_GOTHIC';
+    font-weight: bold;
+ }
+ 
+ #more_sub>a {
+    z-index: 200;
+    color: #233156;
+    font-size: 14px;
+    font-family: 'KOTRA_GOTHIC';
+    font-weight: bold;
+ }
+ 
+ #more_sub:hover {
+    background-color: #8d98b5;
+    border-radius: 3px;
+ }
+.morelist {
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+    margin-left: 1385px;
+    position: absolute;
+    float: left;
+    font-size: 17px;
+    font-family: 'KOTRA_GOTHIC';
+}
+.fzonetext {
+    width: 1140px;
+    height: 30px;
+    padding-top: 20px;
+    margin-left: 70px;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 30px;
+    color: #233156;
+    cursor: pointer;
+    font-weight: bold;
+}
+.community, .fzone, .tos, .fishingtip {
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+    margin-left: 35px;
+}
+.menubutton {
+    width: 415px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 430px;
+    position: absolute;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+.mm{
+    margin: 0 auto;
+}
+.picturebox > img {
+ width:300px;
+ height:310px;
+ border:solid 1px black;
+ border-radius:3px;
+}

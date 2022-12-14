@@ -1,0 +1,308 @@
+\@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+   height: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+ 
+#wrap{
+      width:1000px;
+      margin:0 auto;
+   }
+   .title h3{
+      font-size: 1.5em;
+      color: #233156;
+      
+   }
+   a{
+      display:inline-block;
+      border-radius: 3px;   
+      color:#fff;
+      font-weight: bold;
+      text-decoration: none;
+   }
+   .header_area a{
+      width:70px;
+      padding:10px;
+      text-align: center;
+   }
+   .header_area span{ font-weight: bold; }
+   .btn_area a{
+      text-align: center;
+      padding:10px;
+      width:70px;   
+   }
+   img.thumbnail{
+      display:block;
+      clear:both;
+      width:70px;
+      
+   }
+   #b_modify, #b_list, #b_delete, #b_sujeongok{
+      display:inline-block;
+      border-radius: 3px;
+      background-color: #233156;      
+      color:#fff;
+      font-weight: bold;
+      text-decoration: none;
+   }
+   #boardForm tr:nth-child(n+4) {
+      height:40px;
+   }
+   #boardForm a{
+      padding:5px 10px;
+   }
+   input[type="text"], textarea{
+      border:none;
+      padding:5px;
+      outline:none;
+      
+   }
+   
+   
+   .login{
+    width: 380px;
+    height: 123px;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+.fishlogo > a > img{
+    width:127.75px ;
+    height: 114.77px;
+}
+.loginbutton{
+    width: 160px;
+    height: 20px;
+    margin-left: 1240px;
+    padding-top: 40px;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 17px;
+}
+.searchbar{
+    width: 500px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 550px;
+    padding-left: 10px;
+    border: 3px solid #233156; 
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+.head{
+    width: 1140px;
+    height: 123px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #233156;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+.menu{
+    height: 52px;
+    margin: 0 auto;
+    background-color: #233156; 
+}
+header{
+    height: 100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.closezone_sub {
+    width: 40px;
+    height: 40px;
+    margin-left: 1100px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+}
+.closezone {
+    width: 40px;
+    height: 40px;
+    margin-left: 1100px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+
+}
+.searchzone_sub {
+    width: 40px;
+    height: 40px;
+    margin-left: 1080px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+}
+.searchzone {
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: visible;
+}
+.searchplace {
+    width: 1100px;
+    height: 100px;
+    margin-left: -20px;
+    float: left;
+    visibility: hidden;
+}
+.moretext {
+    margin-left: 10px;
+}
+.logintext {
+    margin-left: -40px;
+    margin-right: 20px;
+}
+.jointext {
+    margin-left: 20px;
+}
+.logintext, .jointext, .moretext { 
+    font-weight: 550;
+    color: #ffffff;
+}
+.sublist {
+    margin-left: 500px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    width: 140px;
+    right: 21.7%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #233156;
+ }
+ 
+ #over:hover .sublist {
+    display: block;
+ }
+ 
+ #more_sub {
+    padding: 8px 0 0 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'KOTRA_GOTHIC';
+    font-weight: bold;
+ }
+ 
+ #more_sub>a {
+    z-index: 200;
+    color: #233156;
+    font-size: 14px;
+    font-family: 'KOTRA_GOTHIC';
+    font-weight: bold;
+ }
+ 
+ #more_sub:hover {
+    background-color: #8d98b5;
+    border-radius: 3px;
+ }
+.morelist {
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+    margin-left: 1385px;
+    position: absolute;
+    float: left;
+    font-size: 17px;
+    font-family: 'KOTRA_GOTHIC';
+}
+.fzonetext {
+    width: 1140px;
+    height: 30px;
+    padding-top: 20px;
+    margin-left: 70px;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 30px;
+    color: #233156;
+    cursor: pointer;
+    font-weight: bold;
+}
+.community, .fzone, .tos, .fishingtip {
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+    margin-left: 35px;
+}
+.menubutton {
+    width: 415px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 430px;
+    position: absolute;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+.mm{
+    margin: 0 auto;
+}
+
+
+.morelist {
+    width: 80px;
+    height: 60px;
+    margin-top: -20px;
+    margin-left: 1385px;
+    position: absolute;
+    float: left;
+    font-size: 17px;
+    font-family: 'KOTRA_GOTHIC';
+}
+
+footer > div {
+    width:1042px ;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+}
+.footer > p{
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'KOTRA_GOTHIC';
+}
+.footer{
+    width: 570px;
+    display: inline-block;
+    margin-top: 70px;
+}

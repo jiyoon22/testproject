@@ -1,0 +1,420 @@
+@charset "UTF-8";@charset "UTF-8";
+
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container{
+    background-color: #ffff;
+    width: 1050px;
+    height: 700px;
+    border: solid 1px black;
+    margin: 0 auto;
+    }
+
+.usertable1{
+        margin: 0 auto;
+    }
+#outinfo1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+}
+#userpw{
+   font-size: 16px;
+    color: gray;
+    border-radius: 3px;
+    border: solid 2px gray;
+    font-weight: bold;
+    width: 308px;
+    height: 32px;
+    padding: 3px 12px; 
+}
+body{
+    height: 980px;
+    margin: 0 auto;
+    background-color: #ffff;
+}
+
+footer{
+    height: 250px;
+    background-color: #233156;
+}
+
+footer > div {
+    width:1042px ;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+}
+.footer > p{
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'KOTRA_GOTHIC';
+}
+.footer{
+    width: 570px;
+    display: inline-block;
+    margin-top: 70px;
+}
+.sns > svg {
+    width: 40px;
+    margin-right: 10px;
+    height: 30px;
+    margin-top: 20px;
+    
+}
+.menu1 , .menu2{
+    width: 570px;
+    height: 52px;
+}
+ul{
+    list-style: none;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 17px;
+}
+.menu1 > ul > li{
+    float: left;
+    margin-left: 50px;
+}
+.menu2 > ul > li{
+    text-align: right;   
+}
+.menu1 >ul > li > a{
+    color: #fff;
+}
+.menu2 > ul > li > a{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.mypage > div > a > svg { 
+    width: 30px;
+    height: 30px;
+}
+.mypage > div {
+    margin-top: 30px;
+    text-align: right;
+}
+.mypage > div > .person > svg {
+    width: 33px;
+    height: 33px;
+}
+.menu2 > ul {
+    width: 445px;
+}
+#ok1{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #233156;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+    margin-left: 90px;
+}
+#cancle1{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+    
+}
+#info1{
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+}
+#info2{
+    font-size: 15px;
+    font-weight: bold;
+    color: #F14F4F;
+    margin-bottom: 10px;
+}
+#bar13{
+    width: 480px;
+    height: 5px;
+    border: none;
+    background-color: gray;
+}
+#userpw22{
+    width: 270px;
+    height: 22px;
+    border-radius: 10px;
+    border: solid 2px gray;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+#inumber22{
+width: 450px;
+height: 170px;
+border-radius: 3px;
+border: solid 2px gray;
+margin-top: 3px;
+padding:3px;
+}
+label{
+    
+        font-weight: bold;
+        font-size: 18px;
+}
+#inumber22{
+    padding: 5px;
+}
+#buttons{
+    margin-top: 20px;
+}
+.community, .fzone, .tos, .fishingtip {
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+    margin-left: 35px;
+}
+.menubutton {
+    width: 410px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 430px;
+    position: absolute;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 17px;
+}
+.sublist {
+    margin-left: 500px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    width: 140px;
+    right: 21.7%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #233156;
+ }
+ 
+ #over:hover .sublist {
+    display: block;
+ }
+ 
+ #more_sub {
+    padding: 8px 0 0 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'KOTRA_GOTHIC';
+    font-weight: bold;
+ }
+ 
+ #more_sub>a {
+    z-index: 200;
+    color: #233156;
+    font-size: 14px;
+    font-family: 'KOTRA_GOTHIC';
+    font-weight: bold;
+ }
+ 
+ #more_sub:hover {
+    background-color: #8d98b5;
+    border-radius: 3px;
+ }
+.morelist {
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+    margin-left: 1385px;
+    position: absolute;
+    float: left;
+    font-size: 17px;
+    font-family: 'KOTRA_GOTHIC';
+}
+.closezone_sub {
+    width: 40px;
+    height: 40px;
+    margin-left: 1100px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+}
+.closezone {
+    width: 40px;
+    height: 40px;
+    margin-left: 1100px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+
+}
+.searchzone_sub {
+    width: 40px;
+    height: 40px;
+    margin-left: 1080px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+}
+.searchzone {
+    width: 40px;
+    height: 40px;
+    margin-right: 50px;
+    padding-top: 32.5px;
+    float: left;
+    cursor: pointer;
+    visibility: visible;
+}
+.searchplace {
+    width: 1100px;
+    height: 100px;
+    margin-left: -20px;
+    float: left;
+    visibility: hidden;
+}
+.moretext {
+    margin-left: 10px;
+}
+.logintext {
+    margin-left: -40px;
+    margin-right: 20px;
+}
+.jointext {
+    margin-left: 20px;
+}
+.logintext, .jointext, .moretext { 
+    font-weight: 550;
+    color: #ffffff;
+}
+.head{
+    width: 1140px;
+    height: 123px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    width: 1920px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #233156;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+.menu{
+    height: 52px;
+    margin: 0 auto;
+    background-color: #233156; 
+}
+.trending_topics{
+    width: 380px;
+    height: 123px;
+    background-color: #fff;
+}
+.fishlogo{
+    width:150px;
+    height:123px;
+    padding-top: 20px;
+    margin-left: 495px;
+}
+.login{
+    width: 380px;
+    height: 123px;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+.fishlogo > a > img{
+    width:127.75px ;
+    height: 114.77px;
+}
+.loginbutton{
+    width: 160px;
+    height: 20px;
+    margin-left: 1240px;
+    padding-top: 40px;
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 17px;
+}
+.searchbar{
+    width: 500px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 550px;
+    padding-left: 10px;
+    border: 3px solid #233156; 
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+    
+}
+.mypage{
+    width: 130px;
+    height: 74px;
+    /* background-color:aquamarine; */
+    background-color: #fff;
+    
+}
+.menubar{
+    width: 1140px;
+    height: 52px;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+#pwresult {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:13px
+}
+
+
+
+
+
+
+
+
+
+
+
+header{
+    height: 100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+.mm{
+    margin: 0 auto;
+}

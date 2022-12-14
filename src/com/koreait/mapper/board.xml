@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Board">
+	<insert id="insertBoard" parameterType="boarddto">
+		insert into f_board (boardtitle,boardcontents,userid)
+		values(#{boardtitle},#{boardcontents},#{userid})
+	</insert>
+	<insert id="insertReply" parameterType="replydto">
+		insert into f_reply (replycontents,userid,boardnum)
+		values(#{replycontents},#{userid},#{boardnum})
+	</insert>
+	
+
+	<select id="getBoardCnt" resultType="_int">
+		select count(*) from f_board
+	</select>
+	<select id="getBoardCntWithKey" resultType="_int" parameterType="string">
+												<!-- ${}는 양 옆에 ' 없이 파라미터 사용 -->
+		select count(*) from f_board where boardtitle like('%${keyword}%')
+	</select>
+	
+	<select id="getBoardList" resultType="boarddto" parameterType="hashmap">
+		select * from f_board order by boardnum desc limit #{startRow},#{pageSize}
+	</select>
+	<select id="getBoardListWithKey" resultType="boarddto" parameterType="hashmap">
+		select * from f_board where boardtitle like('%${keyword}%')
+		order by boardnum desc limit #{startRow},#{pageSize}
+	</select>
+	<select id="getDetail" resultType="boarddto" parameterType="_int">
+		select * from f_board where boardnum = #{boardnum}
+	</select>
+	<select id="getLastNum" resultType="_int" parameterType="string">
+		select max(boardnum) from f_board where userid=#{userid}
+	</select>
+	<select id="getReplies" resultType="replydto" parameterType="_int">
+		select * from f_reply where boardnum=#{boardnum}
+	</select>
+	
+	<update id="updateReadCount" parameterType="_int">
+		update f_board set readcount = readcount+1 where boardnum=#{boardnum}
+	</update>
+	<update id="updateBoard" parameterType="boarddto">
+		update f_board set boardtitle = #{boardtitle}, boardcontents=#{boardcontents}, updatedate=now()
+		where boardnum=#{boardnum}
+	</update>
+	<update id="updateReply" parameterType="hashmap">
+		update f_reply set replycontents=#{replycontents}, updatechk = 'o'
+		where replynum=#{replynum}
+	</update>
+	
+	<delete id="removeBoard" parameterType="_int">
+		delete from f_board where boardnum=#{boardnum}
+	</delete>
+	<delete id="removeReply" parameterType="_int">
+		delete from f_reply where replynum=#{replynum}
+	</delete>
+	<select id="getPopulation" resultType="boarddto" parameterType="hashmap">
+	select * from f_board order by readcount desc limit #{startRow},#{pageSize}
+	</select>
+	<select id="getPopulationWithKey" resultType="boarddto" parameterType="hashmap">
+	select * from f_board where boardtitle like('%${keyword}%')
+	order by readcount desc limit #{startRow},#{pageSize}
+	</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

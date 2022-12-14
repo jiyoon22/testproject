@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    height:1557px ;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+.logo {
+    text-align: center;
+}
+
+.logo> a > img {
+    width: 152px;
+    height: 119.29px;
+}
+.join {
+    width: 390px;
+    height: 1154px;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+}
+
+input[name=userid] {
+    width: 276px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+input[type=button] {
+    width: 94px;
+    height: 41px;
+    background-color: #233156;
+    border: solid 1px #233156;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+}
+input[type=password] {
+    width: 375px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+input[name=username]{
+    width: 375px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+input[name=year]{
+    width: 100px;
+    height: 37px;
+    padding: 2px 12px;
+}
+input[name=month]{
+    width: 100px;
+    height: 37px;
+    padding: 2px 12px;
+}
+input[name=day]{
+    width: 100px;
+    height: 37px;
+    padding: 2px 12px;
+}
+select {
+    width: 92%;
+    height: 41px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.yearofbirth {
+    width: 370px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+#idresult {
+    font-size: 10px;
+    color: gray;
+}
+#pwresult{
+    font-size: 10px;
+    color: gray;
+}
+#pwresult_re{
+    font-size: 10px;
+    color: gray;
+}
+#nameresult{
+    font-size: 10px;
+    color: gray;
+}
+#adresult{
+	  font-size: 10px;
+    color: gray;
+}
+
+.gender > div {
+    display: inline-block;
+    width: 48%;
+    border: solid 1px black;
+    text-align: center;
+    height: 39px;
+    border-radius: 4px;
+}
+.gender > div > span > em {
+    margin-top: 100px;
+}
+input[name=zipcode]{
+    width: 275px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+input[name=zipcode_button]{
+    width: 100%;
+    font-size: 15px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+input[name=addr]{
+    width: 375px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+input[name=addrdetail]{
+    width: 375px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+   
+}
+input[name=str_email01]{
+    width: 30%;
+    height: 37px;
+    border: solid 1px black; 
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 2px 12px;
+    
+}
+input[name=str_email02]{
+    width: 30%;
+    height: 37px;
+    border: solid 1px black; 
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 2px 12px;
+    
+}
+select[name=selectEmail]{
+    height: 41px;
+    margin-left: 10px;
+}
+#e-mailresult {
+    font-size: 10px;
+    color: gray;
+}
+input[name=phone]{
+    width:250px;
+    height: 37px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#phone_result{
+    font-size: 10px;
+    color: gray;
+}
+#adresult{
+	  font-size: 10px;
+    color: gray;
+}
+input[name=verification]{
+    width: 200px;
+    height: 37px;
+    border:solid 1px black;
+    border-radius: 4px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#verificationresult{
+    font-size: 10px;
+    color: gray;
+}
+
+input[type=submit]{
+    width: 405px;
+    height: 47px;
+    margin-top: 50px;
+    border-radius: 4px;
+    border: solid 1px #233156;
+    background-color: #233156;
+    color: #fff;
+    font-size: 16px;
+    padding: 2px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 250px;
+    background-color: #233156;
+    margin-top: 400px;
+}
+
+footer > div {
+    width:1042px ;
+    height: 250px;
+    margin: 0 auto;
+    display: flex;
+}
+.footer > p{
+    margin: 0 auto;
+    color: #fff;
+}
+.footer{
+    width: 570px;
+    display: inline-block;
+    margin-top: 70px;
+}
+.sns > svg {
+    width: 40px;
+    margin-right: 10px;
+    height: 30px;
+    margin-top: 20px;
+    
+}
